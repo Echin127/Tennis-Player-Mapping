@@ -1,3 +1,10 @@
+"""
+Uses ranking data and the player list through player IDs to create a new csv in the correct format
+for map use. Output includes the IOC of each country and the point and total player attributes.
+Points are calculated by a sum of the inverse ranking of each player (e.g. if there are 2000 players
+ranked 1 is allocated 1999 points, rank 2 is allocated 1998 points etc.)
+"""
+
 import csv
 
 def main(ranking_csv, player_csv):
@@ -70,4 +77,5 @@ def main(ranking_csv, player_csv):
     print("Completed")
 
             
+
             
