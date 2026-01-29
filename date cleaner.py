@@ -1,3 +1,8 @@
+"""
+Due to the ranking data covering each week in each year, this code removes all ranking dates except
+the one specified, or else the data cannot be processed.
+"""
+
 import csv
 
 def main(csv_file, keepdate):
@@ -15,3 +20,4 @@ def main(csv_file, keepdate):
                 writer.writerow(row)
                 
     print("Completed")
+
